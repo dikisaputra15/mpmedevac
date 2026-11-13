@@ -97,9 +97,9 @@
                 </div>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="Police Post" data-icon="{{ asset('images/Layer3.png') }}">
+                    <input class="form-check-input category-radio" type="radio" name="category" value="Sub Police Station" data-icon="{{ asset('images/Layer3.png') }}">
                     <img src="{{ asset('images/Layer3.png') }}" style="width:12px; height:12px;">
-                    <label class="form-check-label">Police Post</label>
+                    <label class="form-check-label">Sub Police Station</label>
                 </div>
 
                   <div class="form-check form-check-inline">

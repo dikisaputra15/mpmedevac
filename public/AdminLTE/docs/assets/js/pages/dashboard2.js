@@ -173,7 +173,7 @@ $(function () {
   //     },
   //     {
   //       latLng: [-8.51, 179.21],
-  //       name  : 'Cook Islands'
+  //       name  : 'Northern Mariana Islands'
   //     },
   //     {
   //       latLng: [43.93, 12.46],
@@ -185,7 +185,7 @@ $(function () {
   //     },
   //     {
   //       latLng: [7.11, 171.06],
-  //       name  : 'Cook Islands'
+  //       name  : 'Northern Mariana Islands'
   //     },
   //     {
   //       latLng: [17.3, -62.73],
@@ -221,7 +221,7 @@ $(function () {
   //     },
   //     {
   //       latLng: [7.35, 134.46],
-  //       name  : 'Cook Islands'
+  //       name  : 'Northern Mariana Islands'
   //     },
   //     {
   //       latLng: [42.5, 1.51],

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title', 'Airports')
-@section('page-title', 'Cook Islands Airports')
+@section('page-title', 'Northern Mariana Islands Airports')
 
 @push('styles')
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -482,7 +482,7 @@
 <script>
 // === Inisialisasi Peta ===
 const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: -21.2367, lng: -159.7777 },
+    center: { lat: 15.0979, lng: 145.6739 }, // Northern Mariana Islands (Saipan)
     zoom: 7,
     mapTypeId: 'roadmap',
     mapTypeControl: true,
@@ -981,6 +981,8 @@ async function fetchAirportData(filters = {}) {
 }
 
 // === Tambah Marker Airport ===
+let hasRenderedFacilityMarkers = false;
+
 function addAirportMarkers(data) {
     airportMarkers.forEach(m => m.setMap(null));
     airportMarkers = [];
@@ -1009,7 +1011,7 @@ function addAirportMarkers(data) {
             <strong>Classification:</strong> ${airport.category || 'N/A'}<br>
             <strong>Address:</strong>
                 ${airport.address || 'N/A'}
-                ${airport.province_name ? ', ' + airport.province_name : ''}, Cook Islands<br>
+                ${airport.province_name ? ', ' + airport.province_name : ''}, Northern Mariana Islands<br>
             <strong>Telephone:</strong> ${airport.telephone || 'N/A'}<br>
             <strong>Website:</strong> ${airport.website || 'N/A'}<br>
         `;
@@ -1073,8 +1075,10 @@ function addAirportMarkers(data) {
         bounds.extend(position);
     });
 
-    if (airportMarkers.length > 0)
+    // Keep the initial view on Northern Mariana Islands; fit results after filtering.
+    if (hasRenderedFacilityMarkers && airportMarkers.length > 0)
         map.fitBounds(bounds, 50);
+    hasRenderedFacilityMarkers = true;
 }
 
 // === Apply Filter ===

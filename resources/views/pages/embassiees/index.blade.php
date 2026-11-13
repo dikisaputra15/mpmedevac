@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title','Embassiees')
-@section('page-title', 'Cook Islands Embassiees')
+@section('page-title', 'Northern Mariana Islands Embassiees')
 
 @push('styles')
 
@@ -309,7 +309,7 @@
 <script>
 // === Inisialisasi Peta ===
 const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: -21.2367, lng: -159.7777 },
+    center: { lat: 15.0979, lng: 145.6739 }, // Northern Mariana Islands (Saipan)
     zoom: 7,
     mapTypeId: 'roadmap',
     mapTypeControl: true,
@@ -809,6 +809,8 @@ async function fetchEmbassyData(filters = {}) {
 }
 
 // === Tambah Marker Embassy ===
+let hasRenderedFacilityMarkers = false;
+
 function addEmbassyMarkers(data) {
     embassyMarkers.forEach(m => m.setMap(null));
     embassyMarkers = [];
@@ -834,7 +836,7 @@ function addEmbassyMarkers(data) {
 
         const popupContent = `
             <h5 style="border-bottom:1px solid #cccccc;">${itemName}</h5>
-            <strong>Address:</strong> ${embassy.location || 'N/A'}, Cook Islands<br>
+            <strong>Address:</strong> ${embassy.location || 'N/A'}, Northern Mariana Islands<br>
             <strong>Telephone:</strong> ${embassy.telephone || 'N/A'}<br>
             <strong>Website:</strong> ${embassy.website || 'N/A'}<br>
         `;
@@ -898,8 +900,10 @@ function addEmbassyMarkers(data) {
         bounds.extend(position);
     });
 
-    if (embassyMarkers.length > 0)
+    // Keep the initial view on Northern Mariana Islands; fit results after filtering.
+    if (hasRenderedFacilityMarkers && embassyMarkers.length > 0)
         map.fitBounds(bounds, 50);
+    hasRenderedFacilityMarkers = true;
 }
 
 // === Apply Filter ===

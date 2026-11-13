@@ -120,15 +120,15 @@
                     <label>Police Station</label>
                 </div>
 
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Police Post' ? 'selected' : '' }}">
+                <div class="form-check form-check-inline police-option {{ $police->category == 'Sub Police Station' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
-                        value="Police Post"
+                        value="Sub Police Station"
                         data-icon="{{ asset('images/Layer3.png') }}"
-                        {{ $police->category == 'Police Post' ? 'checked' : '' }}>
+                        {{ $police->category == 'Sub Police Station' ? 'checked' : '' }}>
                     <img src="{{ asset('images/Layer3.png') }}" width="16">
-                    <label>Police Post</label>
+                    <label>Sub Police Station</label>
                 </div>
 
                 <div class="form-check form-check-inline police-option {{ $police->category == 'Specialized Unit' ? 'selected' : '' }}">

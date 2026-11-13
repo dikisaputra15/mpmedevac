@@ -142,7 +142,7 @@
                     <p>
                         <strong>Address:</strong>
                         {{ $embassy->location }},
-                        {{ $province->provinces_region }}, Cook Islands
+                        {{ $province->provinces_region }}, Northern Mariana Islands
                     </p>
                     <p>
                         <strong>Latitude:</strong> {{ $embassy->latitude }}

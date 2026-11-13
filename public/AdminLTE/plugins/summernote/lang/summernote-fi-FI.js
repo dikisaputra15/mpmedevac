@@ -124,8 +124,8 @@ var __webpack_exports__ = {};
         foreground: 'Tekstin väri',
         transparent: 'Läpinäkyvä',
         setTransparent: 'Aseta läpinäkyväksi',
-        reset: 'Cook Islandsta',
-        resetToDefault: 'Cook Islandsta oletusarvoksi'
+        reset: 'Northern Mariana Islandsta',
+        resetToDefault: 'Northern Mariana Islandsta oletusarvoksi'
       },
       shortcut: {
         shortcuts: 'Pikanäppäimet',

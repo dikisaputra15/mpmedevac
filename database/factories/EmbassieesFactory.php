@@ -24,7 +24,7 @@ class EmbassieesFactory extends Factory
             'fax' => $this->faker->phoneNumber,
             'email' => $this->faker->unique()->safeEmail,
             'website' => $this->faker->url,
-            'latitude' => 13.4443, // Cook Islands
+            'latitude' => 13.4443, // Northern Mariana Islands
             'longitude' => 144.7937,
             'image' => $this->faker->randomElement([
                 'https://pg.concordreview.com/wp-content/uploads/2025/01/Autralia-Consulate-Lea.jpg',
