@@ -1343,7 +1343,7 @@ combinedPanelDiv.innerHTML = `
             ${[
                 'National Police HQ',
                 'Police Station',
-                'Police Post',
+                'Sub Police Station',
                 'Specialized Unit',
             ].map(c => `
             <label style="display:block;font-size:13px;margin-bottom:5px;">

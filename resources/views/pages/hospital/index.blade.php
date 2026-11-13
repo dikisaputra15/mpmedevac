@@ -1852,9 +1852,8 @@ combinedPanelDiv.innerHTML = `
             </select>
             <label>Facility Level:</label>
             ${[
-                { alias: 'National Hospital', value: 'National Hospital' },
-                { alias: 'Outer Island Hospital', value: 'Outer Island Hospital' },
-                { alias: 'Clinic / Health Center', value: 'Clinic / Health Center' }
+                { alias: 'Hospital', value: 'Hospital' },
+                { alias: 'Clinic / Health Centre', value: 'Clinic / Health Centre' }
             ].map(c => `
             <label style="display:block;font-size:13px;margin-bottom:5px;">
                 <input type="checkbox" name="hospitalLevel" value="${c.value}">
