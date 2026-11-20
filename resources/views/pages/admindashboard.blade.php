@@ -660,8 +660,8 @@
                             <div class="class-column" style="align-items: flex-start; text-align: left;">
                               <div class="class-header class-basic">Basic</div>
                               <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 10px;">
-                                  <button class="btn p-1 legend-grid-item" style="width: auto; padding-left: 0 !important;" data-bs-toggle="modal" data-bs-target="#level33Modal">
-                                    <img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-green.png" style="width:24px; height:24px;">
+                                  <button class="btn p-1 legend-grid-item" style="width: auto; padding-left: 0 !important;" data-bs-toggle="modal" data-bs-target="#level11Modal">
+                                    <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-tosca.png" style="width:24px; height:24px;">
                                     <small>Clinic / Health Centre</small>
                                   </button>
                               </div>
@@ -681,7 +681,19 @@
                                 <div class="hospital-item">
                                     <button class="btn p-1 text-start w-100" data-bs-toggle="modal" data-bs-target="#police3Modal">
                                         <img src="{{ asset('images/Layer2.png') }}" style="width:12px; height:12px;">
-                                        <small>Police Precint</small>
+                                        <small>Police Station</small>
+                                    </button>
+                                </div>
+                                <div class="hospital-item">
+                                    <button class="btn p-1 text-start w-100" data-bs-toggle="modal" data-bs-target="#police2Modal">
+                                        <img src="{{ asset('images/Layer3.png') }}" style="width:12px; height:12px;">
+                                        <small>Sub Police Station</small>
+                                    </button>
+                                </div>
+                                <div class="hospital-item">
+                                    <button class="btn p-1 text-start w-100" data-bs-toggle="modal" data-bs-target="#police1Modal">
+                                        <img src="{{ asset('images/Layer4.png') }}" style="width:12px; height:12px;">
+                                        <small>Specialized Unit</small>
                                     </button>
                                 </div>
                             </div>
@@ -841,102 +853,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="level11Modal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-         <div class="d-flex align-items-center">
-            <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-tosca.png" style="width:30px; height:30px;">
-            <h5 class="modal-title" id="disclaimerLabel">Level 1 – Village Health Post – Aid Post (VHP)</h5>
-         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-            <h6 class="fw-bold">
-                <b>Overview</b>
-            </h6>
-            <p class="text-justify">
-                Level 1 facility is the most basic healthcare delivery point in Northern Mariana Islands, typically located in rural or remote communities and staffed by a community health worker or aid post orderly. Aid posts provides essential first-contact care, health education, and basic treatment for common conditions, referring patients to higher-level facilities as needed, and plays a critical role in extending primary healthcare access under Northern Mariana Islands National Department of Health.
-            </p>
-             <h6 class="fw-bold">
-                <b>Role</b>
-            </h6>
-            <p class="text-justify">
-                <ul>
-                    <li>First point of contact for healthcare in remote communities</li>
-                    <li>Provides basic treatment and health education</li>
-                    <li>Refers patients to Level 2 or Level 3 facilities</li>
-                    <li>Supports community-based public health activities</li>
-                </ul>
-            </p>
-            <h6 class="fw-bold">
-                <b>Clinical Services</b>
-            </h6>
-            <p class="text-justify">
-                <ul>
-                    <li>Bed Capacity: No inpatient beds</li>
-                    <li>
-                        <strong>Core Services</strong>
-                        <ul>
-                            <li>Basic first aid and treatment</li>
-                            <li>Management of common minor illnesses</li>
-                            <li>Maternal and child health support (basic)</li>
-                            <li>Health education to community</li>
-                        </ul>
-                    </li>
-                    <li class="mt-2">
-                        <strong>Emergency Services</strong>
-                        <ul>
-                            <li>Initial stabilization and referral</li>
-                        </ul>
-                    </li>
-                    <li class="mt-2">
-                        <strong>Diagnostic</strong>
-                        <ul>
-                            <li>No formal diagnostic services</li>
-                            <li>Symptom-based assessment only</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-             <h5 class="fw-bold" style="color:#3c8dbc;">
-                Northern Mariana Islands Government Health System
-            </h5>
-            <p class="text-justify">
-                Northern Mariana Islands operates a state-led, tax-funded public health system without a unified national health insurance scheme. The system is administered by Northern Mariana Islands National Department of Health and delivered through a decentralized network of provincial and district health services.
-            </p>
-            <p class="text-justify">
-                Healthcare financing is primarily derived from:
-                <ul>
-                    <li>General government taxation</li>
-                    <li>Significant external donor support</li>
-                </ul>
-                Northern Mariana Islands does not operate parallel insurance schemes. Instead, the system is structured around public service provision with limited user fees, supplemented by private out-of-pocket payments and employer-based arrangements.
-            </p>
-            <h5 class="fw-bold" style="color:#3c8dbc;">
-                Public Health Service Delivery System (Government & Provincial Health Authorities)
-            </h5>
-            <p class="text-justify">
-                Northern Mariana Islands’s primary healthcare system is delivered through a nationwide network of public facilities managed by Provincial Health Authorities (PHAs) under the policy direction of the National Department of Health. It covers most of the population, particularly in rural and remote areas.
-            </p>
-            <p class="text-justify">
-                The system is largely financed through government budgets, meaning services are free or low-cost at the point of care, especially for essential health services.
-            </p>
-            <p class="text-justify">
-                Care is delivered through a tiered referral system (Level 1–6), with patients typically accessing care through primary-level facilities before being referred to higher-level hospitals.
-            </p>
-            <p class="text-justify">
-                Public providers include:
-                <ul>
-                    <li>Aid Posts, Health Sub-centers, and Health Centers (primary care)</li>
-                    <li>District, Provincial, and Regional / National Hospitals (secondary and tertiary care)</li>
-                </ul>
-                This structure emphasizes primary healthcare, disease prevention, and maternal-child health services, but patient choice of provider is limited, particularly in rural areas.
-            </p>
-      </div>
-    </div>
-  </div>
-</div>
+@include('partials.classification.level11Modal')
 
 <div class="modal fade" id="level22Modal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
@@ -1171,47 +1088,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="level55Modal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center">
-            <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png" style="width:30px; height:30px;">
-            <h5 class="modal-title" id="disclaimerLabel">Hospital</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-            <h6 class="fw-bold"><b>Overview</b></h6>
-            <p class="text-justify">The Northern Mariana Islands Memorial Hospital (GMH) is Northern Mariana Islands’s only public hospital and the top of the civilian public system. It is run by the Northern Mariana Islands Memorial Hospital Authority (GMHA), which the law makes “a public corporation and an autonomous instrumentality” of the government of Northern Mariana Islands (10 GCA Section 80102). GMHA is governed by a Board of Trustees (10 GCA Section 80105). By law, GMHA must “[m]aintain and operate a facility providing acute, chronic and all other health care services,” including services it provides by contract for the Northern Mariana Islands Behavioral Health and Wellness Center (10 GCA Section 80109(a)). The acute-care hospital is at Oka Point, Tamuning. GMHA also runs a separately located Skilled Nursing Facility in Barrigada Heights.</p>
-            <p class="text-justify"><strong>Note:</strong> Three other facilities sit outside this tier. First, the Northern Mariana Islands Behavioral Health and Wellness Center (GBHWC), formerly the Department of Mental Health and Substance Abuse, is a separate government department. By law it provides “comprehensive inpatient and community-based outpatient mental health, alcohol and drug programs and services” (10 GCA Section 86101); record it as “Public — specialty behavioral health facility,” not as a general hospital. Second, the US Naval Hospital Northern Mariana Islands in Agana Heights is a federal military hospital serving primarily active-duty personnel and other military beneficiaries. It is not governed by the GCA; record it as “Federal (military) hospital” and leave it out of the civilian tiers. Third, GMH’s accreditation should be checked before it is cited. GMH regained Joint Commission accreditation in 2010 and lost it again in July 2018. GMHA currently describes the hospital as CMS certified, and its laboratory is accredited by the College of American Pathologists (CAP). We did not find a current Joint Commission status, so treat any claim of current Joint Commission accreditation as unverified.</p>
-            <h6 class="fw-bold"><b>Role</b></h6>
-            <ul>
-                <li>Serve as Northern Mariana Islands’s only public acute-care hospital and the main civilian referral hospital for the Community Health Centers and private clinics</li>
-                <li>Provide 24-hour emergency care. By law, GMHA must also establish an Urgent Healthcare Center on the hospital premises for non-emergency outpatient care, meeting Joint Commission and CMS primary-care / urgent-care criteria (10 GCA Section 80123)</li>
-                <li>Serve as the hospital of last resort for patients covered by government programs. GMHA’s accounts must separately track receivables from Medicare, Medicaid, the Medically Indigent Program, Worker’s Compensation and other governments, including the Freely Associated States (10 GCA Section 80116)</li>
-                <li>Provide hospitalization, treatment and drugs for medically indigent patients with irreversible renal failure (10 GCA Section 80117).</li>
-            </ul>
-            <h6 class="fw-bold"><b>Clinical Service</b></h6>
-            <p><strong>Core Capability Areas</strong></p>
-            <ul>
-                <li>Acute and chronic inpatient care, emergency care, and the on-site urgent care center mandated by 10 GCA Section 80123</li>
-                <li>Long-term (skilled nursing) care at the off-site Skilled Nursing Facility. Under 10 GCA Section 7103(b), a nursing home run with a hospital needs its own nursing-home license, separate from the hospital’s</li>
-            </ul>
-            <p><strong>Diagnostic &amp; Support Infrastructure</strong></p>
-            <ul>
-                <li>Hospital clinical laboratory (CAP-accredited), with diagnostic and treatment services. The statutory definition of a “hospital” requires at least clinical laboratory services, diagnostic x-ray services, and facilities for surgery, obstetric care or other definitive treatment (10 GCA Section 25101(d))</li>
-                <li>Aging infrastructure. The Northern Mariana Islands Legislature has found that GMH’s buildings are more than 50 years old, “in an overall state of failure,” and endanger its CMS-based accreditation status. It authorized a replacement healthcare campus under the Northern Mariana Islands Twenty-First (21st) Century Healthcare Center Act of 2021 (12 GCA Chapter 83)</li>
-            </ul>
-            <p><strong>Typical Bed Capacity</strong></p>
-            <ul>
-                <li>About 158–161 licensed acute-care beds at Tamuning, plus 40 licensed long-term-care beds at the Barrigada Heights Skilled Nursing Facility. Sources differ slightly on the acute-care figure.</li>
-            </ul>
-            <p class="text-justify"><em><strong>Note:</strong> Legal basis: 10 GCA Sections 25101, 7103, 80102–80123 and 86101; 12 GCA Chapter 83. Bed counts and accreditation history come from Northern Mariana Islandspedia and Wikipedia; CMS certification and CAP accreditation come from the GMHA website (gmha.org). None of these details are stated in the GCA itself.</em></p>
-      </div>
-    </div>
-  </div>
-</div>
+@include('partials.classification.level55Modal')
 
 <div class="modal fade" id="level66Modal" tabindex="-1" aria-labelledby="level66ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable level66-modal-dialog">
@@ -1366,147 +1243,13 @@
   </div>
 </div>
 
-<div class="modal fade" id="police1Modal" tabindex="-1" aria-labelledby="police1ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer4.png') }}" alt="District Police Command" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police1ModalLabel">District Police Command / Police Station</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+@include('partials.classification.police1Modal')
 
-      <div class="modal-body">
-        <p><strong>Command Level:</strong> Third-tier Territorial Police Command</p>
-        <p><strong>Typical Head Rank:</strong> Superintendent of Police (SP) or Inspector of Police (IP)</p>
-        <p><strong>Administrative Equivalent:</strong> District level</p>
+@include('partials.classification.police2Modal')
 
-        <p>Supervises police operations within a district by directing police stations and subordinate units, coordinating patrol activities, maintaining public order, supporting criminal investigations, and ensuring effective delivery of policing services within their jurisdiction.</p>
+@include('partials.classification.police3Modal')
 
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Command district-level police operations.</li>
-          <li>Supervise Police Station Commanders within the district.</li>
-          <li>Coordinate patrol, crime prevention, and law enforcement activities.</li>
-          <li>Direct responses to local emergencies and major incidents.</li>
-          <li>Allocate operational personnel and resources among police stations.</li>
-          <li>Monitor crime trends and operational performance within the district.</li>
-          <li>Coordinate policing with district administrations and community leaders.</li>
-          <li>Ensure implementation of provincial operational directives.</li>
-          <li>Prepare operational reports for the Provincial Police Commander (PPCs).</li>
-          <li>Support community policing and conflict-resolution initiatives.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="police2Modal" tabindex="-1" aria-labelledby="police2ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer3.png') }}" alt="Provincial Police Command" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police2ModalLabel">Provincial Police Command (PPC)</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>Command Level:</strong> Second-tier Territorial Police Command</p>
-        <p><strong>Typical Head Rank:</strong> Chief Superintendent of Police (CSP) or Superintendent of Police (SP)</p>
-        <p><strong>Administrative Equivalent:</strong> Provincial (or Metropolitan Command in the National Capital District and Lae) level</p>
-
-        <p>Commands all policing activities within a province or metropolitan area by directing district police commands, managing crime prevention and law enforcement operations, coordinating emergency responses, and implementing national policing policies at the provincial level.</p>
-
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Command all policing operations within a province.</li>
-          <li>Supervise District Police Commanders and Station Commanders.</li>
-          <li>Coordinate crime prevention, patrol, and public order operations.</li>
-          <li>Direct provincial criminal investigations and emergency responses.</li>
-          <li>Manage police personnel, logistics, and operational resources within the province.</li>
-          <li>Coordinate policing activities with provincial administrations and local authorities.</li>
-          <li>Monitor crime patterns and public safety issues.</li>
-          <li>Ensure compliance with national policing standards and operational procedures.</li>
-          <li>Prepare operational reports for the Divisional Police Commander.</li>
-          <li>Promote community policing and public engagement initiatives.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="police3Modal" tabindex="-1" aria-labelledby="police3ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer2.png') }}" alt="Divisional Command" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police3ModalLabel">Police Precint</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>Command level:</strong> Lowest-level territorial command</p>
-        <p><strong>Typical Head Rank:</strong> Police Lieutenant</p>
-        <p><strong>Administrative Equivalent:</strong> Police Precinct/local police command</p>
-        <p><strong>Role:</strong> Precinct Commands are the local territorial policing unit responsible for delivering frontline police services within designated geographic jurisdictions.</p>
-        <p><strong>Function:</strong> Precinct Commands manage patrol officers and shifts, coordinate first-response policing, and maintain day-to-day public safety and police presence within the Precinct area.</p>
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Direct daily patrol operations within the Precinct jurisdiction.</li>
-          <li>Supervise patrol officers, shifts, and other assigned frontline personnel.</li>
-          <li>Allocate personnel and patrol resources according to local operational requirements.</li>
-          <li>Manage responses to emergency and non-emergency calls for service.</li>
-          <li>Monitor crime, disorder, traffic, and public-safety conditions within the Precinct.</li>
-          <li>Coordinate preliminary responses to incidents requiring specialized GPD services.</li>
-          <li>Maintain liaison with residents, businesses, community organizations, and local authorities.</li>
-          <li>Review incident, arrest, and other operational reports submitted by patrol personnel.</li>
-          <li>Implement GPD policies and operational directives at the Precinct level.</li>
-          <li>Report Precinct activities, incidents, personnel matters, and operational requirements through the Neighborhood Patrol District command.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="police4Modal" tabindex="-1" aria-labelledby="police4ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer1.png') }}" alt="National Police HQ" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police4ModalLabel">National Police HQ</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>Command level:</strong> Highest-level territorial command</p>
-        <p><strong>Typical Head Rank:</strong> Police Major</p>
-        <p><strong>Administrative Equivalent:</strong> Territorial policing bureau</p>
-        <p><strong>Role:</strong> The Patrol Operations Bureau is the principal departmental command responsible for organizing and overseeing GPD’s geographically based patrol operations throughout Northern Mariana Islands.</p>
-        <p>The Patrol Operations Bureau directs territorial patrol services, coordinates the neighborhood patrol districts and precinct commands, and ensures consistent delivery of frontline police services across the island.</p>
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Direct territorial patrol operations throughout Northern Mariana Islands.</li>
-          <li>Supervise the activities of the neighborhood patrol districts and precinct commands.</li>
-          <li>Establish patrol priorities and operational requirements for territorial policing.</li>
-          <li>Coordinate deployment of patrol personnel and resources according to operational needs.</li>
-          <li>Monitor emergency response and frontline police service delivery.</li>
-          <li>Manage major incidents requiring resources from multiple Precincts or districts.</li>
-          <li>Ensure implementation of department-wide policing policies at the territorial level.</li>
-          <li>Review operational reports, crime patterns, and patrol performance from subordinate commands.</li>
-          <li>Oversee territorial operations with specialized GPD bureaus and divisions.</li>
-          <li>Report territorial policing activities and operational requirements to the Police Commander.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+@include('partials.classification.police4Modal')
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -2549,17 +2292,27 @@ document.addEventListener('change', function(e) {
         const showPolice = facilities.includes('police');
         const showEmbassy = facilities.includes('embassy');
 
+        const hospitalFilter = document.getElementById('hospitalFilter');
+        hospitalFilter.style.display = showHospital ? 'block' : 'none';
+
         // === HOSPITALS ===
         if (showHospital) {
              const result = await fetchData('/api/hospital', {
                 ...common,
-                name: hospitalName,
-                category: hospitalLevels
+                name: hospitalName
             });
 
-            addMarkers(result.hospitals, hospitalMarkers, null);
+            const selectedLevels = hospitalLevels.map(level => level.toLowerCase());
+            const hospitals = selectedLevels.length
+                ? result.hospitals.filter(item => selectedLevels.includes((item.facility_level || '').trim().toLowerCase()))
+                : result.hospitals;
+            addMarkers(hospitals, hospitalMarkers, null);
+            totalHospitals = hospitals.length;
 
-            totalHospitals = result.hospitals.length;
+            hospitalFilter.querySelectorAll('input[name="hospitalLevel"]').forEach(checkbox => {
+                const count = result.levelCounts?.[checkbox.value] ?? 0;
+                checkbox.closest('label').querySelector('span').textContent = count;
+            });
         } else {
             clearMarkers(hospitalMarkers);
         }
@@ -2607,6 +2360,9 @@ document.addEventListener('change', function(e) {
             clearMarkers(airportMarkers);
         }
 
+        const policeFilter = document.getElementById('policeFilter');
+        policeFilter.style.display = showPolice ? 'block' : 'none';
+
         // === POLICE ===
        if (showPolice) {
 
@@ -2614,7 +2370,12 @@ document.addEventListener('change', function(e) {
                 ...common
             });
 
-            const police = result.polices || [];
+            const selectedCategories = [...policeFilter.querySelectorAll('input[name="policeCategory"]:checked')]
+                .map(checkbox => checkbox.value.toLowerCase());
+            const police = selectedCategories.length
+                ? result.polices.filter(item => (item.category || '').split(',').some(category =>
+                    selectedCategories.includes(category.trim().toLowerCase())))
+                : result.polices;
             const categoryCounts = result.categoryCounts || {};
 
             addMarkers(
@@ -2736,6 +2497,14 @@ document.addEventListener('change', function(e) {
                         <div class="facility-item"><input class="form-check-input facility-checkbox" type="checkbox" value="police" id="facilityPolice"><label class="form-check-label" for="facilityPolice"><span class="facility-name">Police</span><span class="facility-count" id="policeCount">0</span></label></div>
                         <div class="facility-item"><input class="form-check-input facility-checkbox" type="checkbox" value="embassy" id="facilityEmbassy"><label class="form-check-label" for="facilityEmbassy"><span class="facility-name">Embassies</span><span class="facility-count" id="embassyCount">0</span></label></div>
                         <div class="facility-item"><input class="form-check-input" type="checkbox" value="all" id="facilityAll"><label class="form-check-label" for="facilityAll"><span class="facility-name is-all">All / Clear All</span></label></div>
+                    </div>
+
+                    <div id="hospitalFilter" style="display:none;">
+                        @include('partials.filters.facility-levels')
+                    </div>
+
+                    <div id="policeFilter" style="display:none;">
+                        @include('partials.filters.police-categories')
                     </div>
 
                     <hr>

@@ -151,16 +151,19 @@ class PoliceController extends Controller
             'Specialized Unit' => 0,
         ];
 
-       foreach ($polices as $police) {
+        $categoryLabels = array_combine(
+            array_map('strtolower', array_keys($categoryCounts)),
+            array_keys($categoryCounts)
+        );
 
-            if (empty($police->category)) {
-                continue;
-            }
+        foreach ($polices as $police) {
+            $categories = array_unique(array_map(
+                fn ($category) => strtolower(trim($category)),
+                explode(',', $police->category ?? '')
+            ));
 
-            $cat = trim($police->category);
-
-            if (isset($categoryCounts[$cat])) {
-                $categoryCounts[$cat]++;
+            foreach (array_intersect_key($categoryLabels, array_flip($categories)) as $label) {
+                $categoryCounts[$label]++;
             }
         }
 

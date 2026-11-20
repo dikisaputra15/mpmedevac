@@ -453,8 +453,8 @@
                           <div class="hospital-list">
                             <div class="hospital-row">
                               <div class="hospital-item">
-                                <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#level33Modal">
-                                  <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-green.png" style="width:24px; height:24px;">
+                                <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#level11Modal">
+                                  <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-tosca.png" style="width:24px; height:24px;">
                                   <small>Clinic / Health Centre</small>
                                 </button>
                               </div>
@@ -471,102 +471,7 @@
 </div>
 
 
-<div class="modal fade" id="level11Modal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-         <div class="d-flex align-items-center">
-            <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-tosca.png" style="width:30px; height:30px;">
-            <h5 class="modal-title" id="disclaimerLabel">Level 1 – Village Health Post – Aid Post (VHP)</h5>
-         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-            <h6 class="fw-bold">
-                <b>Overview</b>
-            </h6>
-            <p class="text-justify">
-                Level 1 facility is the most basic healthcare delivery point in Northern Mariana Islands, typically located in rural or remote communities and staffed by a community health worker or aid post orderly. Aid posts provides essential first-contact care, health education, and basic treatment for common conditions, referring patients to higher-level facilities as needed, and plays a critical role in extending primary healthcare access under Northern Mariana Islands National Department of Health.
-            </p>
-             <h6 class="fw-bold">
-                <b>Role</b>
-            </h6>
-            <p class="text-justify">
-                <ul>
-                    <li>First point of contact for healthcare in remote communities</li>
-                    <li>Provides basic treatment and health education</li>
-                    <li>Refers patients to Level 2 or Level 3 facilities</li>
-                    <li>Supports community-based public health activities</li>
-                </ul>
-            </p>
-            <h6 class="fw-bold">
-                <b>Clinical Services</b>
-            </h6>
-            <p class="text-justify">
-                <ul>
-                    <li>Bed Capacity: No inpatient beds</li>
-                    <li>
-                        <strong>Core Services</strong>
-                        <ul>
-                            <li>Basic first aid and treatment</li>
-                            <li>Management of common minor illnesses</li>
-                            <li>Maternal and child health support (basic)</li>
-                            <li>Health education to community</li>
-                        </ul>
-                    </li>
-                    <li class="mt-2">
-                        <strong>Emergency Services</strong>
-                        <ul>
-                            <li>Initial stabilization and referral</li>
-                        </ul>
-                    </li>
-                    <li class="mt-2">
-                        <strong>Diagnostic</strong>
-                        <ul>
-                            <li>No formal diagnostic services</li>
-                            <li>Symptom-based assessment only</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-             <h5 class="fw-bold" style="color:#3c8dbc;">
-                Northern Mariana Islands Government Health System
-            </h5>
-            <p class="text-justify">
-                Northern Mariana Islands operates a state-led, tax-funded public health system without a unified national health insurance scheme. The system is administered by Northern Mariana Islands National Department of Health and delivered through a decentralized network of provincial and district health services.
-            </p>
-            <p class="text-justify">
-                Healthcare financing is primarily derived from:
-                <ul>
-                    <li>General government taxation</li>
-                    <li>Significant external donor support</li>
-                </ul>
-                Northern Mariana Islands does not operate parallel insurance schemes. Instead, the system is structured around public service provision with limited user fees, supplemented by private out-of-pocket payments and employer-based arrangements.
-            </p>
-            <h5 class="fw-bold" style="color:#3c8dbc;">
-                Public Health Service Delivery System (Government & Provincial Health Authorities)
-            </h5>
-            <p class="text-justify">
-                Northern Mariana Islands’s primary healthcare system is delivered through a nationwide network of public facilities managed by Provincial Health Authorities (PHAs) under the policy direction of the National Department of Health. It covers most of the population, particularly in rural and remote areas.
-            </p>
-            <p class="text-justify">
-                The system is largely financed through government budgets, meaning services are free or low-cost at the point of care, especially for essential health services.
-            </p>
-            <p class="text-justify">
-                Care is delivered through a tiered referral system (Level 1–6), with patients typically accessing care through primary-level facilities before being referred to higher-level hospitals.
-            </p>
-            <p class="text-justify">
-                Public providers include:
-                <ul>
-                    <li>Aid Posts, Health Sub-centers, and Health Centers (primary care)</li>
-                    <li>District, Provincial, and Regional / National Hospitals (secondary and tertiary care)</li>
-                </ul>
-                This structure emphasizes primary healthcare, disease prevention, and maternal-child health services, but patient choice of provider is limited, particularly in rural areas.
-            </p>
-      </div>
-    </div>
-  </div>
-</div>
+@include('partials.classification.level11Modal')
 
 <div class="modal fade" id="level22Modal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
@@ -801,47 +706,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="level55Modal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center">
-            <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png" style="width:30px; height:30px;">
-            <h5 class="modal-title" id="disclaimerLabel">Hospital</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-            <h6 class="fw-bold"><b>Overview</b></h6>
-            <p class="text-justify">The Northern Mariana Islands Memorial Hospital (GMH) is Northern Mariana Islands’s only public hospital and the top of the civilian public system. It is run by the Northern Mariana Islands Memorial Hospital Authority (GMHA), which the law makes “a public corporation and an autonomous instrumentality” of the government of Northern Mariana Islands (10 GCA Section 80102). GMHA is governed by a Board of Trustees (10 GCA Section 80105). By law, GMHA must “[m]aintain and operate a facility providing acute, chronic and all other health care services,” including services it provides by contract for the Northern Mariana Islands Behavioral Health and Wellness Center (10 GCA Section 80109(a)). The acute-care hospital is at Oka Point, Tamuning. GMHA also runs a separately located Skilled Nursing Facility in Barrigada Heights.</p>
-            <p class="text-justify"><strong>Note:</strong> Three other facilities sit outside this tier. First, the Northern Mariana Islands Behavioral Health and Wellness Center (GBHWC), formerly the Department of Mental Health and Substance Abuse, is a separate government department. By law it provides “comprehensive inpatient and community-based outpatient mental health, alcohol and drug programs and services” (10 GCA Section 86101); record it as “Public — specialty behavioral health facility,” not as a general hospital. Second, the US Naval Hospital Northern Mariana Islands in Agana Heights is a federal military hospital serving primarily active-duty personnel and other military beneficiaries. It is not governed by the GCA; record it as “Federal (military) hospital” and leave it out of the civilian tiers. Third, GMH’s accreditation should be checked before it is cited. GMH regained Joint Commission accreditation in 2010 and lost it again in July 2018. GMHA currently describes the hospital as CMS certified, and its laboratory is accredited by the College of American Pathologists (CAP). We did not find a current Joint Commission status, so treat any claim of current Joint Commission accreditation as unverified.</p>
-            <h6 class="fw-bold"><b>Role</b></h6>
-            <ul>
-                <li>Serve as Northern Mariana Islands’s only public acute-care hospital and the main civilian referral hospital for the Community Health Centers and private clinics</li>
-                <li>Provide 24-hour emergency care. By law, GMHA must also establish an Urgent Healthcare Center on the hospital premises for non-emergency outpatient care, meeting Joint Commission and CMS primary-care / urgent-care criteria (10 GCA Section 80123)</li>
-                <li>Serve as the hospital of last resort for patients covered by government programs. GMHA’s accounts must separately track receivables from Medicare, Medicaid, the Medically Indigent Program, Worker’s Compensation and other governments, including the Freely Associated States (10 GCA Section 80116)</li>
-                <li>Provide hospitalization, treatment and drugs for medically indigent patients with irreversible renal failure (10 GCA Section 80117).</li>
-            </ul>
-            <h6 class="fw-bold"><b>Clinical Service</b></h6>
-            <p><strong>Core Capability Areas</strong></p>
-            <ul>
-                <li>Acute and chronic inpatient care, emergency care, and the on-site urgent care center mandated by 10 GCA Section 80123</li>
-                <li>Long-term (skilled nursing) care at the off-site Skilled Nursing Facility. Under 10 GCA Section 7103(b), a nursing home run with a hospital needs its own nursing-home license, separate from the hospital’s</li>
-            </ul>
-            <p><strong>Diagnostic &amp; Support Infrastructure</strong></p>
-            <ul>
-                <li>Hospital clinical laboratory (CAP-accredited), with diagnostic and treatment services. The statutory definition of a “hospital” requires at least clinical laboratory services, diagnostic x-ray services, and facilities for surgery, obstetric care or other definitive treatment (10 GCA Section 25101(d))</li>
-                <li>Aging infrastructure. The Northern Mariana Islands Legislature has found that GMH’s buildings are more than 50 years old, “in an overall state of failure,” and endanger its CMS-based accreditation status. It authorized a replacement healthcare campus under the Northern Mariana Islands Twenty-First (21st) Century Healthcare Center Act of 2021 (12 GCA Chapter 83)</li>
-            </ul>
-            <p><strong>Typical Bed Capacity</strong></p>
-            <ul>
-                <li>About 158–161 licensed acute-care beds at Tamuning, plus 40 licensed long-term-care beds at the Barrigada Heights Skilled Nursing Facility. Sources differ slightly on the acute-care figure.</li>
-            </ul>
-            <p class="text-justify"><em><strong>Note:</strong> Legal basis: 10 GCA Sections 25101, 7103, 80102–80123 and 86101; 12 GCA Chapter 83. Bed counts and accreditation history come from Northern Mariana Islandspedia and Wikipedia; CMS certification and CAP accreditation come from the GMHA website (gmha.org). None of these details are stated in the GCA itself.</em></p>
-      </div>
-    </div>
-  </div>
-</div>
+@include('partials.classification.level55Modal')
 
 <div class="modal fade" id="level66Modal" tabindex="-1" aria-labelledby="level66ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable level66-modal-dialog">
@@ -1850,16 +1715,7 @@ combinedPanelDiv.innerHTML = `
                     <option value="{{ $n }}">{{ $n }}</option>
                 @endforeach
             </select>
-            <label>Facility Level:</label>
-            ${[
-                { alias: 'Hospital', value: 'Hospital' },
-                { alias: 'Clinic / Health Centre', value: 'Clinic / Health Centre' }
-            ].map(c => `
-            <label style="display:block;font-size:13px;margin-bottom:5px;">
-                <input type="checkbox" name="hospitalLevel" value="${c.value}">
-                ${c.alias} (<span id="count-${c.value.replace(/[^a-zA-Z0-9]/g,'-')}">0</span>)
-            </label>
-            `).join('')}
+            @include('partials.filters.facility-levels')
             <hr>
             <div class="filter-box" id="provinceSelect">
                 <label class="filter-label">Province</label>
